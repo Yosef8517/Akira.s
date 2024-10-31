@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akira Interactive</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .wow{
+            border: 0.1em solid rgb(104, 104, 250);
+            background-color: rgb(104, 104, 247);
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50" tabindex="0">
+    <!-- Navbar with Scrollspy -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Akira Interactive</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-5 text-center bg-primary text-white">
+        <div class="container">
+            <h1>Welcome to Akira Interactive</h1>
+            <p>Your partner in creating interactive and user-friendly websites.</p>
+            <button class="btn btn-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasInfo">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Offcanvas Info -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasInfo">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">About Akira Interactive</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>At Akira Interactive, we are passionate about delivering exceptional web and graphic design services that help businesses thrive in the digital world. Founded on the principles of creativity, innovation, and collaboration, we strive to provide our clients with tailored solutions that meet their unique needs and exceed their expectations.
+
+                <h3>Our Mission</h3>
+                Our mission is to empower businesses by providing them with high-quality design services that enhance their online presence and drive growth. We believe that a strong brand identity and a user-friendly website are essential for success in today’s competitive marketplace. We work closely with our clients to understand their goals, ensuring that every project aligns with their vision.
+                
+                <h3>Our Values</h3>
+                <ul>
+                <li>Quality: We are committed to delivering high-quality work that stands out. Our team of skilled designers and developers is dedicated to excellence in every project.</li>
+                
+                <li>Collaboration: We believe in the power of teamwork. By collaborating with our clients, we create designs that truly reflect their brand and resonate with their audience.</li>
+                
+                <li>Innovation: The digital landscape is constantly evolving, and so are we. We stay ahead of the curve by embracing new trends and technologies to provide cutting-edge solutions.</li>
+                
+                <li>Customer Satisfaction: Our clients are at the heart of everything we do. We prioritize communication and responsiveness, ensuring that we are always available to address your needs and concerns.</li>
+                </ul>
+                <h3>Why Choose Us?</h3>
+                When you choose Akira Interactive, you’re not just hiring a service; you’re partnering with a dedicated team that is invested in your success. We take the time to understand your business, your audience, and your goals. This personalized approach allows us to create designs that are not only visually stunning but also strategically effective.
+                
+                <h4>Get in Touch</h4>
+                Ready to take your business to the next level? We invite you to explore our services and see how we can help you achieve your goals. Contact us today to discuss your project and discover the difference that professional design can make!
+                
+                </p>
+        </div>
+    </div>
+
+    <!-- About Section with Cards and Toast -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="mb-4">About Us</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="image/creative wow.webp" class="card-img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Creative Solutions</h5>
+                            <p class="card-text">Innovative designs to make your brand stand out. <br>In today’s digital landscape, standing out is essential. Our creative solutions for your website focus on delivering a unique user experience that captures attention and engages visitors. We combine innovative design with intuitive functionality, ensuring that every aspect of your site reflects your brand’s identity.</p>
+                            <button class="btn btn-primary" onclick="showToast('Creative Solutions')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="image/communicate.avif" class="card-img-top" alt="User-Friendly Designs">
+                        <div class="card-body">
+                            <h5 class="card-title">User-Friendly Designs</h5>
+                            <p class="card-text">At Akira interactive, we understand that a great user experience is the cornerstone of any successful website. Our approach to design prioritizes user-friendliness, ensuring that every visitor has a seamless and enjoyable interaction with your site. 
+                                Easy-to-navigate interfaces that enhance user experience.<br><br>
+                                <strong>Accessible Design:</strong><br>
+                                We are committed to inclusivity, ensuring that our websites are accessible to all users, including those with disabilities.
+                                we believe that a happy user is a loyal customer. <br><em><strong>Let us help you build a website that your visitors will love!</strong></em></p>
+                            <button class="btn btn-primary" onclick="showToast('User-Friendly Designs')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="image/layouts.webp" class="img-fluid" alt="Responsive Layouts">
+                        <div class="card-body">
+                            <h5 class="card-title">Responsive Layouts</h5>
+                            <p class="card-text-fluid"> 
+                                <em>Optimized for all devices, from mobile to desktop.</em>
+                                Our team crafts visually appealing layouts that resonate with your target audience.<br> 
+                                By integrating vibrant colors, engaging visuals, and user-friendly navigation, we create an inviting atmosphere that encourages exploration.
+                                Our solutions are designed to be fully responsive across devices, ensuring that users enjoy a consistent experience whether they’re on a smartphone, tablet, or desktop. </p>
+                            <button class="btn btn-primary" onclick="showToast('Responsive Layouts')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast -->
+    <div id="toastMessage" class="toast position-fixed bottom-0 end-0 m-3" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto">Akira Interactive</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body"></div>
+    </div>
+
+    <!-- Services Section with Accordion -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4">Our Services</h2>
+            <div class="accordion" id="servicesAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="serviceOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Web Development</button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#servicesAccordion">
+                        <div class="accordion-body">Our Web Development Services
+                            <ul>
+                                
+                            <li>Custom Website Development: Every business is unique, and so are its needs. We offer tailored web development solutions that align with your goals and vision. Whether you need a simple landing page or a complex e-commerce site, we've got you covered.</li>
+                            
+                            <li>Responsive Design: With more users accessing websites on mobile devices than ever before, having a responsive design is crucial. We ensure that your website looks great and functions flawlessly on all devices, from desktops to smartphones.</li>
+                            
+                            <li>User-Friendly Interfaces: A website should be intuitive and easy to navigate. Our designs prioritize user experience, making it simple for visitors to find what they need, which enhances customer satisfaction and retention.</li>
+                            
+                            <li>E-Commerce Solutions: Ready to take your business online? We provide comprehensive e-commerce solutions, including secure payment integrations, product management systems, and user account features. Let us help you create an online store that stands out.</li>
+                            
+                            <li>SEO Optimization: Having a beautiful website is just the beginning. We implement SEO best practices to ensure your site is discoverable on search engines, driving organic traffic and helping you reach a wider audience.</li>
+                            
+                            <li>Ongoing Support: Our commitment to you doesn’t end after launch. We offer ongoing maintenance and support to keep your website running smoothly, ensuring you can focus on what you do best—growing your business.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="serviceTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Graphic Design</button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                        <div class="accordion-body">In a visually-driven world, effective graphic design is essential for making a lasting impression. At [Your Company Name], we specialize in creating compelling visuals that not only communicate your brand’s message but also captivate your audience.
+
+                            <h5>Our Graphic Design Services</h5>
+                            <ul>
+                            <li>Brand Identity Design: Your brand is your story, and we’re here to help you tell it. We create unique logos, color schemes, and visual styles that reflect your brand’s personality and values, ensuring you stand out in a crowded market.</li>
+                            
+                            <li>Marketing Materials: Whether you need brochures, flyers, posters, or business cards, we design eye-catching marketing materials that resonate with your target audience. Our designs are not just visually appealing; they’re strategically crafted to drive engagement and conversions.</li>
+                            
+                           <li> Digital Graphics: In the age of social media and online marketing, compelling digital graphics are crucial. We design social media graphics, banners, and ads that grab attention and encourage action, helping you connect with your audience online.</li>
+                            
+                            <li>Web Graphics: Enhance your website with custom graphics that complement your brand. From infographics to icons, we create visually appealing elements that improve user experience and convey information effectively.</li>
+                            
+                            <li>Print Design: Our team ensures that your print materials look just as good in hand as they do on screen. We focus on high-quality designs that translate seamlessly into print, maintaining color accuracy and clarity.</li>
+                            </ul>
+                            <h6>Why Choose Our Graphic Design Services?</h6>
+                            <ul>
+                            <li>Creative Expertise: Our talented designers stay updated on the latest trends and techniques, ensuring your designs are modern and relevant.</li>
+                            <li>Collaborative Process: We believe in a collaborative approach. We work closely with you to understand your vision and goals, tailoring our designs to meet your specific needs.</li>
+                            <li>Attention to Detail: Every project is approached with precision and care. We pay close attention to every detail, ensuring that the final product exceeds your expectations.</li>
+                            <li>Quick Turnaround: We understand the importance of deadlines. Our efficient processes allow us to deliver high-quality designs within your timeframe.</li>
+                            </ul>
+                            Ready to enhance your brand with professional graphic design? Let’s work together to create stunning visuals that leave a lasting impression on your audience. Contact us at Akira Interactive today!</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="serviceThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">SEO Optimization</button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                        <div class="accordion-body">In the ever-evolving digital landscape, simply having a website isn't enough. To stand out and attract potential customers, your site must be easily discoverable. This is where Search Engine Optimization (SEO) comes into play. At Akira Interactive, we understand that effective SEO is crucial for driving organic traffic and maximizing your online visibility.<br>
+                            <br><h5>Our SEO Optimization Services</h5>
+                            <ul>
+<li>Comprehensive Keyword Research: Understanding what your target audience is searching for is the foundation of effective SEO. We conduct in-depth keyword research to identify high-impact keywords that will drive traffic to your site.</li>
+
+<li>On-Page Optimization: We optimize key on-page elements, including title tags, meta descriptions, headers, and content. This ensures that search engines can easily understand your content and rank it appropriately.</li>
+
+<li>Quality Content Creation: Content is king in the world of SEO. Our team creates high-quality, engaging content that not only appeals to your audience but also aligns with SEO best practices. This includes blog posts, product descriptions, and informative articles that establish your authority in your industry.</li>
+
+<li>Technical SEO: A well-structured website is essential for SEO success. We analyze and optimize your site's architecture, improving site speed, mobile-friendliness, and navigation to enhance user experience and boost search engine rankings.</li>
+
+<li>Link Building Strategies: Backlinks from reputable sites signal to search engines that your website is trustworthy. We implement effective link-building strategies to increase your site's authority and improve its position in search results.</li>
+
+<li>Local SEO: For businesses targeting local customers, local SEO is critical. We optimize your online presence to ensure that your business appears in local search results, Google Maps, and other location-based platforms.</li>
+
+<li>Performance Tracking and Reporting: We provide regular performance reports, allowing you to see the impact of our SEO efforts. Our analytics help you understand traffic patterns, user behavior, and conversion rates, enabling you to make informed decisions.</li>
+</ul>
+
+<h5>Why SEO Matters</h5>
+<ul>
+<li>Increased Visibility: Higher search rankings lead to greater visibility, driving more traffic to your website.</li>
+<li>Cost-Effective Marketing: Unlike paid advertising, organic search traffic is free. Effective SEO strategies deliver long-term results without ongoing costs.</li>
+<li>Builds Credibility: Ranking high in search results establishes trust and credibility with your audience, making them more likely to choose your business.</li>
+<li>Better User Experience: SEO isn’t just about search engines; it’s about creating a better experience for your users. An optimized site is faster, easier to navigate, and provides relevant content.</li>
+</ul>
+Ready to enhance your online presence and drive more traffic to your website? Contact us at Akira Interactive today! Our SEO experts are here to help you achieve your business goals through effective optimization strategies.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pagination -->
+    <div class="container d-flex justify-content-center my-4">
+        <nav>
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h3><strong>Why Choose Us?</strong></h3>
+        <ul>
+            <li><em>Expert Team:</em> Our skilled developers and designers are passionate about creating exceptional web experiences.</li>
+            <li><em>Collaborative Approach:</em> We believe in working closely with our clients to understand their needs and deliver tailored solutions.</li>
+            <li><em>Affordable Solutions:</em> Quality web development doesn’t have to break the bank. We offer competitive pricing without compromising on quality.</li>
+            <li><em>Timely Delivery:</em> We respect your time. Our streamlined processes ensure your project is completed on schedule.</li>
+        </ul>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 text-center">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>For inquiries, reach out at <a href="mailto: info@akirainteractive.com." class="text-primary">+251938352532<br> Telegram @NSFL100</a>.</p>
+        </div>
+    </section>
+
+<div class="container">
+    <div class="wow"></div>
+    <div class="w-50 p-3">To GET Updated Information</div>
+</div>
+
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+        
+    <!-- Footer -->
+    <footer class="py-3 bg-dark text-white text-center">
+        <p>&copy; 2023 Akira Interactive. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript and custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
